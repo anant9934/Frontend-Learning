@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Maps</title>
+</head>
+<body>
+    <h1>Image Maps</h1>
+    <p>Image maps allow you to create clickable areas within an image.</p>
+    <img src="assets/image1.jpg" alt="Image Map Example" usemap="#example-map" width="600">
+    <map name="example-map">
+        <area shape="rect" coords="34,44,270,350" alt="Rectangle" href="https://example.com/rectangle">
+        <area shape="circle" coords="337,300,44" alt="Circle" href="https://example.com/circle">
+        <area shape="poly" coords="400,50,450,150,350,200" alt="Polygon" href="https://example.com/polygon">
+    </map>  
+</body>
+</html>
