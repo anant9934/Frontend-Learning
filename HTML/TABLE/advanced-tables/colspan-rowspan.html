@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Colspan and Rowspan</title>
+</head>
+<body>
+  <h1>Table with Colspan and Rowspan</h1>
+  <table>
+    <tr>
+      <th colspan="4">Student Performance Report</th>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th>Mathematics</th>
+      <th>Science</th>
+      <th>Overall Grade</th>
+    </tr>
+    <tr>
+      <td rowspan="2">John Smith</td>
+      <td>85</td>
+      <td>90</td>
+      <td rowspan="2" class="highlight">A</td>
+    </tr>
+    <tr>
+      <td colspan="2">Average: 87.5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Emma Wilson</td>
+      <td>92</td>
+      <td>88</td>
+      <td rowspan="2" class="highlight">A</td>
+    </tr>
+    <tr>
+      <td colspan="2">Average: 90</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="highlight">Class Average: 88.75</td>
+    </tr>
+  </table>
+</body>
+</html>
