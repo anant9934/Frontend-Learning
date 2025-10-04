@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accessible Tables</title>
+</head>
+<body>
+  <h1>Accessible Table Example</h1>
+  <table role="table" aria-describedby="table-description">
+    <caption id="table-description">University Course Schedule for Computer Science Department - Fall 2025</caption>
+    <thead>
+      <tr>
+        <th scope="col" id="course-code">Course Code</th>
+        <th scope="col" id="course-name">Course Name</th>
+        <th scope="col" id="instructor">Instructor</th>
+        <th scope="col" id="credits">Credits</th>
+        <th scope="col" id="schedule">Schedule</th>
+        <th scope="col" id="enrollment">Enrolled Students</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" headers="course-code">CS101</th>
+        <td headers="course-name">Introduction to Programming</td>
+        <td headers="instructor">Dr. Sarah Johnson</td>
+        <td headers="credits" class="numeric">3</td>
+        <td headers="schedule">MWF 9:00-10:00 AM</td>
+        <td headers="enrollment" class="numeric">45</td>
+      </tr>
+      <tr>
+        <th scope="row" headers="course-code">CS201</th>
+        <td headers="course-name">Data Structures</td>
+        <td headers="instructor">Prof. Michael Chen</td>
+        <td headers="credits" class="numeric">4</td>
+        <td headers="schedule">TTh 2:00-3:30 PM</td>
+        <td headers="enrollment" class="numeric">38</td>
+      </tr>
+      <tr>
+        <th scope="row" headers="course-code">CS301</th>
+        <td headers="course-name">Database Systems</td>
+        <td headers="instructor">Dr. Emily Rodriguez</td>
+        <td headers="credits" class="numeric">3</td>
+        <td headers="schedule">MWF 11:00-12:00 PM</td>
+        <td headers="enrollment" class="numeric">32</td>
+      </tr>
+      <tr>
+        <th scope="row" headers="course-code">CS401</th>
+        <td headers="course-name">Software Engineering</td>
+        <td headers="instructor">Prof. David Kim</td>
+        <td headers="credits" class="numeric">4</td>
+        <td headers="schedule">TTh 10:00-11:30 AM</td>
+        <td headers="enrollment" class="numeric">28</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row" colspan="5">Total Students Enrolled</th>
+        <td class="numeric" style="font-weight:700; background:#0b67c2; color:#fff;">143</td>
+      </tr>
+    </tfoot>
+  </table>
+  <div class="sr-only">
+    <p>This table shows the course schedule for the Computer Science Department. It includes course codes, course names, instructors, credits, schedule, and enrollment numbers.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Complex Table</title>
+</head>
+<body>
+  <h1>Complex Table Structure</h1>
+  <table aria-describedby="desc">
+    <caption id="desc" style="text-align:left; font-weight:700; margin-bottom:10px;">
+      Annual Sales Report 2025
+    </caption>
+    <tr>
+      <th colspan="6" class="main-header">Annual Sales Report 2025</th>
+    </tr>
+    <tr>
+      <th rowspan="2" class="sub-header">Quarter</th>
+      <th colspan="2" class="sub-header">Hardware</th>
+      <th colspan="2" class="sub-header">Software</th>
+      <th rowspan="2" class="sub-header">Total</th>
+    </tr>
+    <tr>
+      <th class="category-header">Laptops</th>
+      <th class="category-header">Phones</th>
+      <th class="category-header">Licenses</th>
+      <th class="category-header">Support</th>
+    </tr>
+    <tr>
+      <td class="sub-header">Q1</td>
+      <td class="data-cell">$120,000</td>
+      <td class="data-cell">$80,000</td>
+      <td class="data-cell">$45,000</td>
+      <td class="data-cell">$25,000</td>
+      <td class="highlight">$270,000</td>
+    </tr>
+    <tr>
+      <td class="sub-header">Q2</td>
+      <td class="data-cell">$150,000</td>
+      <td class="data-cell">$95,000</td>
+      <td class="data-cell">$52,000</td>
+      <td class="data-cell">$30,000</td>
+      <td class="highlight">$327,000</td>
+    </tr>
+    <tr>
+      <td class="sub-header">Q3</td>
+      <td class="data-cell">$135,000</td>
+      <td class="data-cell">$110,000</td>
+      <td class="data-cell">$48,000</td>
+      <td class="data-cell">$35,000</td>
+      <td class="highlight">$328,000</td>
+    </tr>
+    <tr>
+      <td class="sub-header">Q4</td>
+      <td class="data-cell">$180,000</td>
+      <td class="data-cell">$125,000</td>
+      <td class="data-cell">$60,000</td>
+      <td class="data-cell">$40,000</td>
+      <td class="highlight">$405,000</td>
+    </tr>
+    <tr>
+      <td class="total-row">Total</td>
+      <td class="total-row">$585,000</td>
+      <td class="total-row">$410,000</td>
+      <td class="total-row">$205,000</td>
+      <td class="total-row">$130,000</td>
+      <td class="total-row">$1,330,000</td>
+    </tr>
+    <tr>
+      <td class="sub-header">Percentage</td>
+      <td class="data-cell">44%</td>
+      <td class="data-cell">31%</td>
+      <td class="data-cell">15%</td>
+      <td class="data-cell">10%</td>
+      <td class="highlight">100%</td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Table Groups (thead, tbody, tfoot)</title>
+</head>
+<body>
+  <h1>Table with Groups</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Salary ($)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="department-header">
+        <td colspan="4">Engineering Department</td>
+      </tr>
+      <tr>
+        <td>E001</td>
+        <td>Alice Johnson</td>
+        <td>Frontend Developer</td>
+        <td>75,000</td>
+      </tr>
+      <tr>
+        <td>E002</td>
+        <td>Bob Smith</td>
+        <td>Backend Developer</td>
+        <td>80,000</td>
+      </tr>
+      <tr class="department-header">
+        <td colspan="4">Marketing Department</td>
+      </tr>
+      <tr>
+        <td>M001</td>
+        <td>Carol White</td>
+        <td>Marketing Manager</td>
+        <td>70,000</td>
+      </tr>
+      <tr>
+        <td>M002</td>
+        <td>David Brown</td>
+        <td>Content Creator</td>
+        <td>55,000</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3">Total Employees: 4</th>
+        <th>$280,000</th>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
